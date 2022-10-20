@@ -35,4 +35,16 @@ CREATE TABLE salaries (
   PRIMARY KEY (emp_no)
 );
 
-SELECT * FROM departments;
+CREATE TABLE dept_emp (
+	dept_no varchar(4) NOT NULL,
+	emp_no INT NOT NULL,
+	from_date DATE NOT NULL,
+	to_date DATE NOT NULL
+	);
+
+CREATE TABLE titles (
+  emp_no INT NOT NULL,
+  title VARCHAR(4) NOT NULL,
+  from_date DATE NOT NULL,
+  to_date DATE NOT NULL
+);
