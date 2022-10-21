@@ -1,3 +1,5 @@
+-- DELIVERABLE 1: The Number of Retiring Employees by Title
+
 -- create new table that contains employee no, names, title, and start and end date
 SELECT emp.emp_no,
 emp.first_name,
@@ -37,6 +39,17 @@ ORDER BY ut.count DESC;
 
 SELECT * FROM retiring_titles;
 
+-- DELIVERABLE 2: The Employees Eligible for the Mentorship Program 
 
+SELECT DISTINCT ON (emp_no) e.emp_no, e.first_name, e.last_name, e.birth_date,
+de.from_date, de.to_date, 
+t.title
+FROM employees as e
+JOIN dept_emp as de ON (e.emp_no = de.emp_no)
+JOIN titles as t ON (e.emp_no = t.emp_no)
+INTO mentorship_eligibility
+WHERE (de.to_date = '9999-01-01') 
+AND (birth_date BETWEEN '1965-01-01' AND '1965-12-31')
+ORDER BY e.emp_no;
 
-
+SELECT * FROM membership_eligibility;
