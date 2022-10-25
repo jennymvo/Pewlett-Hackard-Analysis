@@ -53,3 +53,19 @@ AND (birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 ORDER BY e.emp_no;
 
 SELECT * FROM membership_eligibility;
+
+-- README.md tables
+
+-- Find the ages of the retiring employees
+SELECT DATE_PART('year', '2022-10-24'::date) - DATE_PART('year', birth_date::date),
+birth_date, first_name, last_name
+INTO employees_ages
+FROM employees;
+
+--Count the number of employees per age
+SELECT COUNT(ea.age), ea.age
+INTO number_ages
+FROM employees_ages AS ea
+GROUP BY ea.age
+ORDER BY ea.age;
+
