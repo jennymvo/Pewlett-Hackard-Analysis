@@ -17,3 +17,9 @@ Alarmingly, the youngest employees in company is 57 years old. At full normal re
 
 ![Ages of employees](https://github.com/jennymvo/Pewlett-Hackard-Analysis/blob/main/images/ages.png)
 
+When checking the percentage of employees from each age range, it can be seen that over a quarter of the employees are already at or over the retirement age.
+
+![Percent of employees from each age range](https://github.com/jennymvo/Pewlett-Hackard-Analysis/blob/main/images/percent.png)
+
+
+

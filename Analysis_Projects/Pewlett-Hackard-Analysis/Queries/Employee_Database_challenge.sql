@@ -69,3 +69,9 @@ FROM employees_ages AS ea
 GROUP BY ea.age
 ORDER BY ea.age;
 
+-- Find percentage of each age of employee
+SELECT  100.0 * count / sum(count) over () as percent, age
+INTO percent_age
+FROM    number_ages AS na;
+
+SELECT * FROM percent_age;
