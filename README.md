@@ -13,5 +13,7 @@ The purpose of this project is to use SQL databases to sort out information for 
 
 In summary, there are not enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees. With only about 1% of retiring employees eligible for the program, each mentor is going to need to take on at minimum 47 new hires to fill in the positions. 
 
-Alarmingly, the youngest employees in company is 57 years old. At full normal retirement age of 67, that does not allow for much time to find replacements to keep the employee numbers in the company especially since employees need to be
+Alarmingly, the youngest employees in company is 57 years old. At full normal retirement age of 67, that does not allow for much time to find replacements to keep the employee numbers in the company. 
+
+![Ages of employees](https://github.com/jennymvo/Pewlett-Hackard-Analysis/blob/main/images/ages.png)
 
